@@ -1,2 +1,2 @@
 # AulaS01
-Repositorio destinada a abrigar todas as atividades do laboratorio de Paradigmas da Programação 
+Repositorio destinado a abrigar todas as atividades do laboratorio de Paradigmas da Programação 

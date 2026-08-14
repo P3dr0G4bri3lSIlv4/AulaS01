@@ -18,4 +18,5 @@ if meta_de_agua <= agua_ingerida then
 else
     print "Meta nao atingida"
 end if 
+
 sleep

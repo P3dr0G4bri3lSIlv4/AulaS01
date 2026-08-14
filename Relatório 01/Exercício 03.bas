@@ -12,3 +12,5 @@ print "em minutos:"; minutos; " minutos"
 
 segundos = horas * 3600 
 print "em segundos:"; segundos; " segundos"
+
+sleep

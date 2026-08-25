@@ -29,7 +29,7 @@ if N and N > 0 then--garente que eu estou entrando com valores validos
         
         local resultado= filtrarMaiores(tabela, K)--puxa a função
         print("--- Elementos maiores que "..K.." ---")
-        for i = 1, #resultado do--vasculha a tabela me devolvendo os valores maiores do que K 
+        for i = 1, #resultado do--vasculha a tabela me devolvendo os valores da tabela 
             print(resultado[i])
         end    
     

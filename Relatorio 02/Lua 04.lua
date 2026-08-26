@@ -16,7 +16,7 @@ function calcularDiferencaAbsoluta(a, b)
     return math.abs(a - b)
 end    
 
-function analisarNumeros(n1, n2, operacao)--verifica a opcao escolhida    
+function analisarNumeros(n1, n2, operacao) -- verifica a opcao escolhida    
     if operacao == "media" then 
         
         return calcularMedia(n1, n2)

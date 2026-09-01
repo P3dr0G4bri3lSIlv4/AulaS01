@@ -1,0 +1,35 @@
+use std::io;
+
+fn acertou_o_alvo(palpite: i32, numero_secreto: i32) -> bool
+{
+    //TURE apenas se a diferença absoluta for de no máximo 5 unidades 
+    (palpite - numero_secreto).abs() <= 5 //.abs calcula o valor absoluto da subtração
+}
+
+fn main ()
+{
+    let numero_secreto: i32 = 69;
+    
+    loop 
+    {
+        let mut entrada = String::new();
+        println!("Digite seu palpite:");
+        io::stdin().read_line(&mut entrada).expect("Erro ao ler");
+
+        let palpite: i32 = entrada.trim().parse().unwrap_or(0);// Converte a String para i32
+
+        if acertou_o_alvo(palpite, numero_secreto)
+        {
+            let distancia = (palpite - numero_secreto).abs();
+            println!("Parabens, voce acertou o alvo!");
+            println!("Voce ficou a apenas {} unidade(s) do numero secreto ({}).", distancia, numero_secreto);
+            break;
+        }
+        else 
+        {
+            println!("Voce passou longe! Tente novamente.");
+        }
+
+    }
+
+}
